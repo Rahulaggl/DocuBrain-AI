@@ -21,7 +21,7 @@ GROQ_API_KEY = os.getenv("GROQ_API_KEY")  # Groq API key for Part 1 and Part 3
 MODEL_NAME = "mistralai/Mistral-7B-Instruct-v0.3"  # Use Hugging Face online model for Part 2
 
 # Initialize Groq client for Part 1 and Part 3
-groq_client = Groq(api_key=GROQ_API_KEY)
+groq_client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 # Initialize session state
 def initialize_session_state():
