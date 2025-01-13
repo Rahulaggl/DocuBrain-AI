@@ -17,8 +17,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # API Keys and Model Configurations
-HUGGINGFACE_API_KEY = st.secrets("HUGGINGFACE_API_KEY")
-GROQ_API_KEY = st.secrets("GROQ_API_KEY")  # Groq API key for Part 1 and Part 3
+HUGGINGFACE_API_KEY = st.secrets["HUGGINGFACE_API_KEY"]
+GROQ_API_KEY = st.secrets["GROQ_API_KEY"]  # Groq API key for Part 1 and Part 3
 MODEL_NAME = "mistralai/Mistral-7B-Instruct-v0.3"  # Use Hugging Face online model for Part 2
 
 # Initialize Groq client for Part 1 and Part 3
