@@ -62,7 +62,7 @@ def display_introduction():
     for file_name, file_path in sample_files.items():
         st.download_button(
             label=f"Download {file_name}",
-            data=open(file_path, "rb").read(),
+            data=open("https://github.com/Rahulaggl/DocuBrain-AI", "rb").read(),
             file_name=file_name,
             mime="application/pdf"
         )
