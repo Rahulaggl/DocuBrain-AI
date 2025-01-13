@@ -3,7 +3,6 @@ langchain
 langchain-community
 streamlit
 streamlit-chat
-llama-cpp-python
 requests
 faiss-cpu
 sentence-transformers
