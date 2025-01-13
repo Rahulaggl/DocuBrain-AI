@@ -8,7 +8,7 @@ from langchain.vectorstores import FAISS
 from langchain.memory import ConversationBufferMemory
 from langchain.document_loaders import PyPDFLoader
 from groq import Groq
-import tmol
+import tomllib
 import os
 import tempfile
 from dotenv import load_dotenv
