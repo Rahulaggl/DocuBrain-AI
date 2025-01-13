@@ -50,11 +50,11 @@ def display_introduction():
 
     # Provide download link for the sample files
     sample_files = {
-        "Part - 1 Sample Essay (essay.pdf)": "files/essay.pdf",
-        "Part - 2 Document Search Sample (google.pdf)": "files/google.pdf",
-        "Part - 2 Document Sample (tesla.pdf)": "files/tesla.pdf",
-        "Part - 2 Document Sample (uber.pdf)": "files/uber.pdf",
-        "Part - 2 Sample Questions (sample_question.pdf)": "files/sample_question.pdf"
+        "Part - 1 Sample Essay (essay.pdf)": "https://github.com/Rahulaggl/DocuBrain-AI/blob/main/essay.pdf",
+        "Part - 2 Document Search Sample (google.pdf)": "https://github.com/Rahulaggl/DocuBrain-AI/blob/main/google.pdf",
+        "Part - 2 Document Sample (tesla.pdf)": "https://github.com/Rahulaggl/DocuBrain-AI/blob/main/tesla.pdf",
+        "Part - 2 Document Sample (uber.pdf)": "https://github.com/Rahulaggl/DocuBrain-AI/blob/main/uber.pdf",
+        "Part - 2 Sample Questions (sample_question.pdf)": "https://github.com/Rahulaggl/DocuBrain-AI/blob/main/sample_question.pdf"
     }
 
     # Provide download options for users
