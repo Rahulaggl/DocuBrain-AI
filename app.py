@@ -8,7 +8,6 @@ from langchain.vectorstores import FAISS
 from langchain.memory import ConversationBufferMemory
 from langchain.document_loaders import PyPDFLoader
 from groq import Groq
-import tomllib
 import os
 import tempfile
 from dotenv import load_dotenv
@@ -22,7 +21,7 @@ GROQ_API_KEY = st.secrets["GROQ_API_KEY"]  # Groq API key for Part 1 and Part 3
 MODEL_NAME = "mistralai/Mistral-7B-Instruct-v0.3"  # Use Hugging Face online model for Part 2
 
 # Initialize Groq client for Part 1 and Part 3
-groq_client = os.getenv("GROQ_API_KEY")
+groq_client = Groq(api_key=GROQ_API_KEY)
 
 # Initialize session state
 def initialize_session_state():
@@ -51,11 +50,11 @@ def display_introduction():
 
     # Provide download link for the sample files
     sample_files = {
-        "Part - 1 Sample Essay (essay.pdf)": "https://github.com/Rahulaggl/DocuBrain-AI/blob/main/essay.pdf",
-        "Part - 2 Document Search Sample (google.pdf)": "https://github.com/Rahulaggl/DocuBrain-AI/blob/main/google.pdf",
-        "Part - 2 Document Sample (tesla.pdf)": "https://github.com/Rahulaggl/DocuBrain-AI/blob/main/tesla.pdf",
-        "Part - 2 Document Sample (uber.pdf)": "https://github.com/Rahulaggl/DocuBrain-AI/blob/main/uber.pdf",
-        "Part - 2 Sample Questions (sample_question.pdf)": "https://github.com/Rahulaggl/DocuBrain-AI/blob/main/sample_question.pdf"
+        "Part - 1 Sample Essay (essay.pdf)": "essay.pdf",
+        "Part - 2 Document Search Sample (google.pdf)": "google.pdf",
+        "Part - 2 Document Sample (tesla.pdf)": "tesla.pdf",
+        "Part - 2 Document Sample (uber.pdf)": "uber.pdf",
+        "Part - 2 Sample Questions (sample_question.pdf)": "sample_question.pdf"
     }
 
     # Provide download options for users
@@ -63,7 +62,7 @@ def display_introduction():
     for file_name, file_path in sample_files.items():
         st.download_button(
             label=f"Download {file_name}",
-            data=open("https://github.com/Rahulaggl/DocuBrain-AI", "rb").read(),
+            data=open(file_path, "rb").read(),
             file_name=file_name,
             mime="application/pdf"
         )
