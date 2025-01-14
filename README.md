@@ -13,8 +13,8 @@ Visit the application online at: [https://docubrain-ai-8fqgp4pgq3mwrysacuh4m4.st
 - **Points of Minutes (PoM)**: Create structured PoM from provided text.
 - **Custom Instructions**: Perform tasks based on user-defined instructions.
 
-### 2. **InsightDoc AI Analyzer-Content Engine for Document Comparison and Insights**
-This repository implements a Content Engine utilizing Retrieval Augmented Generation (RAG) techniques to analyze and compare multiple PDF documents, specifically Form 10-K filings from multinational companies.
+### 2. **InsightDoc AI Analyzer**
+#####Content Engine for Document Comparison and Insights.This repository implements a Content Engine utilizing Retrieval Augmented Generation (RAG) techniques to analyze and compare multiple PDF documents, specifically Form 10-K filings from multinational companies.
 
 #### Features
 - **PDF Parsing**: Extracts and processes text from PDF documents.
