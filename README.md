@@ -5,6 +5,10 @@
 ## Access the Application
 Visit the application online at: [https://docubrain-ai-8fqgp4pgq3mwrysacuh4m4.streamlit.app/](https://docubrain-ai-8fqgp4pgq3mwrysacuh4m4.streamlit.app/)
 
+## Demo Video
+
+Here is the demo video: [link](https://youtu.be/ZBDC7C6HfnE).
+
 ## Features
 
 ### 1. **Text Processing**
